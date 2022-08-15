@@ -36,10 +36,10 @@ section > .con > .row > .col
 Example: `<section><div class="row"><div class="col w:50 s=w:100">col 1</div><div class="col w:50 s=w:100">col 2</div></div></section>`
 
 #### Padding
-`.p[,x,y,t,b,l,r]:[0,1,...10]`: Padding[,horizontal,vertical,top,bottom,left,right]
+`.p[,x,y,t,b,l,r]:[0,1,...,10]`: Padding[,horizontal,vertical,top,bottom,left,right]
 
 #### Margin
-`.m[,x,y,t,b,l,r]:[0,1,...10]`: Margin[,horizontal,vertical,top,bottom,left,right]
+`.m[,x,y,t,b,l,r]:[0,1,...,10]`: Margin[,horizontal,vertical,top,bottom,left,right]
 
 #### Font size
 `.s:[1-14]`: font-size relative (1-2 for decreased size, 3 for initial size, 3+ for bigger size)
