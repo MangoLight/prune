@@ -40,7 +40,7 @@ Example: `<section><div class="row"><div class="col w:50 s=w:100">col 1</div><di
 `.m[,x,y,t,b,l,r]:[0,1,...,10]`: Margin[,horizontal,vertical,top,bottom,left,right]
 
 #### Font size
-`.s:[1-14]`: font-size relative (1-2 for decreased size, 3 for initial size, 3+ for bigger size)
+`.s:[1-14]`: font-size relative (1-2 for decreased size, 3 for 1em size, 4+ for bigger size)
 
 #### Display
 `.d:[n,b,f,i,g,d,ib]`: none,block,flex,inline,grid,initial,inline-block
