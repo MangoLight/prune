@@ -72,7 +72,7 @@ Example: `<section><div class="row"><div class="col w:50 s=w:100">col 1</div><di
 
 `.m=[...]`: 576px to 980px
 
-Example: .s=w:100 means width:100% under 576px.
+Example: `.s=w:100` means width:100% under 576px.
 
 #### Others
 Borders, Radius, Effects, ...
