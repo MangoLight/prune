@@ -17,8 +17,6 @@ Prune is a lightweight CSS framework inspired from Tailwind.
 
 `.w-m:[1,2,3,4,5,6,7,8,9,10,11,13,15,17,19,21,23,25,30,35,40,45,50,55,60,75,100]e`: min-width 1em,....,100em
 
-`.w:a`: width auto
-
 #### Height
 `.h:[0,10,20,...,100]`: height 0,10%,...,100%
 
