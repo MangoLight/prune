@@ -3,8 +3,9 @@
 Prune is a lightweight CSS framework inspired from Tailwind.
 
 - Reusable
-- Lightweight
+- Lightweight (~11kb gzipped)
 - Reduce custom stylesheets in your projects
+- Much faster developments
 - Based on flexbox
 
 ## Non exhaustive documentation
