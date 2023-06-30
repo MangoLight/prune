@@ -9,8 +9,8 @@ Dedicated to my beloved trio Émi, Benji & Hajni
 *{position:relative;max-width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:baseline;overflow-wrap:break-word;word-break:break-word;-webkit-transition-duration:0.25s;-o-transition-duration:0.25s;transition-duration:0.25s;-webkit-transition-property:box-shadow,opacity,transform,border-color;-o-transition-property:box-shadow,opacity,transform,border-color;transition-property:box-shadow,opacity,transform,border-color}
 sup{vertical-align:super}
 sub{vertical-align:sub}
-html{font-size:16px}
-body{margin:0;background:#000;color:#fff;line-height:1.5;overflow-x:hidden;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}
+html{font-size:calc(16px + 0.2vw)}
+body{margin:0;background:#000;color:#fff;line-height:1.5;overflow-x:hidden;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;}
 button{cursor:pointer;border:0;background:transparent;font-family:inherit}
 body.loading{cursor:wait}
 figure{margin:0}
@@ -360,7 +360,8 @@ p{margin:1rem 0}
 .bg\:white-8{background-color:rgba(255,255,255,0.8)}
 
 /* BACKGROUND */
-.bg-i\:cover{background-size:cover;background-position:center}
+.bg-i\:c{background-size:cover;background-position:center}
+.o-f\:c{object-fit:cover}
 
 /* CURSOR */
 .cu\:alias{cursor:alias}
@@ -397,7 +398,7 @@ p{margin:1rem 0}
 /* FORM */
 form{width:100%;text-align:left;margin:0}
 form.loading{opacity:0.4;-ms-filter:grayscale(1);-webkit-filter:grayscale(1);filter:grayscale(1);pointer-events:none}
-label{display:block;width:100%;/*margin-bottom:0.5em;*/}
+label{display:block;width:100%;}
 
 input,textarea,select,.input{display:block;background:#fff;color:#222;width:100%;padding:.6em .75em;font-size:1rem}
 input,textarea,select,fieldset,.input{border:1px solid #ccc}
@@ -410,7 +411,7 @@ textarea{min-height:5em;resize:vertical;line-height:1.4}
 input[type="checkbox"],input[type="radio"]{display:inline-block;width:auto;background:initial;border:0;color:initial;margin:0;padding:0;height:auto}
 .checkbox{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;ms-flex-align:center;align-items:center;-webkit-box-pack:flex-start;ms-flex-pack:start;justify-content:flex-start;text-align:left;cursor:pointer}
 .checkbox input[type="checkbox"]{margin:0 0.7em 0 0}
-form .error{outline:1px dashed #D32F2F}
+form .input-error,form *:invalid{outline:2px dashed #F44336}
 
 /* WIDTH */
 .w\:0{width:0}
@@ -698,6 +699,10 @@ form .error{outline:1px dashed #D32F2F}
 .s\:12{font-size:6em}
 .s\:13{font-size:8em}
 .s\:14{font-size:10em}
+.s-f\:1{font-size:1.75vw}
+.s-f\:2{font-size:2vw}
+.s-f\:3{font-size:2.25vw}
+.s-f\:4{font-size:2.5vw}
 
 /* LINE HEIGHT */
 .lh\:0{line-height:0}
@@ -919,21 +924,6 @@ td{border-bottom:1px solid #eee}
 .tr-ro\:180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
 .tr-ro\:270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}
 
-/* EFFECTS *
-.block .effect{-webkit-transition-property:transform,opacity,filter;-o-transition-property:transform,opacity,filter;transition-property:transform,opacity,filter;-webkit-transition-duration:0.3s;-o-transition-duration:0.3s;transition-duration:0.3s}
-.block .effect-marginleft,.block .effect-margintop{display:inline-block}
-.block .effect-zoomin,.block .effect-zoomout,.block .effect-opacity{-webkit-transition-duration:3s;-o-transition-duration:3s;transition-duration:3s}
-.block .effect-fadein{opacity:0}
-.block a:hover .effect-fadein,.block a:focus .effect-fadein,.block a:hover .effect-opacity,.block a:focus .effect-opacity{opacity:1}
-.block .effect-slideup{-webkit-transform:translateY(120%);transform:translateY(120%)}
-.block .effect-zoomout{-webkit-transform:scale(1.06) translateY(1.5%);transform:scale(1.06) translateY(1.5%)}
-.block a:hover .effect-slideup,.block a:focus .effect-slideup,.block a:hover .effect-zoomout,.block a:focus .effect-zoomout{-webkit-transform:none;transform:none}
-.block a:hover .effect-zoomin,.block a:focus .effect-zoomin{-webkit-transform:scale(1.06) translateY(-1.5%);transform:scale(1.06) translateY(-1.5%)}
-.block .effect-colorize{-ms-filter:grayscale(1);-webkit-filter:grayscale(1);filter:grayscale(1)}
-.block a:hover .effect-colorize,.block a:focus .effect-colorize{-ms-filter:none;-webkit-filter:none;filter:none}
-.block a:hover .effect-marginleft,.block a:focus .effect-marginleft{-webkit-transform:translateX(0.5em);transform:translateX(0.5em)}
-.block a:hover .effect-margintop,.block a:focus .effect-margintop{-webkit-transform:translateY(0.5em);transform:translateY(0.5em)}
-
 /* MESSAGES */
 .pr\:message{margin-top:0.5rem;margin-bottom:0.5rem;padding:1rem;color:white;text-align:left;border-left:2px solid;width:25em!important;display:inline-block}
 .pr\:message ul{text-align:left;margin:0;padding-left:22px}
@@ -948,7 +938,6 @@ td{border-bottom:1px solid #eee}
 .pr\:message a{text-decoration:underline}
 
 @media (max-width:550px){
-html{font-size:14px}
 .s\=d\:n{display:none}
 .s\=d\:b{display:block}
 .s\=d\:f{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -1502,7 +1491,6 @@ html{font-size:14px}
 .width-s .s\=w\:a{width:auto!important}
 
 @media (min-width:551px) and (max-width:800px){
-html{font-size:15px}
 .m\=d\:n{display:none}
 .m\=d\:b{display:block}
 .m\=d\:f{display:-webkit-box;display:-ms-flexbox;display:flex}
